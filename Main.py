@@ -13,7 +13,7 @@ TIME_TO_PLAY = 120  # sets amount of time game is played before time is up.
 'minimum of 4 characters and letters may be used more than once. Words will be checked against a'
 'dictionary. Users are encouraged to find the Pygram - a word which uses all seven lettters.'
 'There may be more than one word that uses all 7 letters but to get the Pygram, the user must find'
-'the correct word. If a user chooses to finish before time is up, they can type "EXIT"'
+'the correct word. If a user chooses to finish before time is up, they can type "EXIT".'
 
 
 def main():
