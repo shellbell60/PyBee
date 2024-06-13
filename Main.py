@@ -6,7 +6,7 @@ import re
 
 
 FILE_NAME = 'SpellingBee.txt'   #Text file that contains all words in the dictionary. 
-TIME_TO_PLAY = 120  # sets amount of time game is played before time is up.
+
 
 'This code is a game similar to the NYT Spelling Bee game. Users will be presented with 7 letters.'
 'They will have two minutes to make as many words as possible with the 7 letters. Words must be a '
@@ -20,7 +20,7 @@ def main():
     
     # creates variables used in the timer function.
     now = time.time()
-    future = now + TIME_TO_PLAY
+    future = now + 120
 
     # open text file that contains word dictionary. It is read into a Python list called 'content'
     with open('SpellingBee.txt', 'r') as file:
@@ -58,7 +58,7 @@ def main():
     while True:
         
         # a timer is set which starts running when the user is prompted for their first word.
-        future = now + future
+        future = now + 120
         if time.time() > future: # When time is up, user receives a "TIME'S UP message"
             print("TIME'S UP!!!!")
             print("")
